@@ -6,6 +6,10 @@ import * as schema from "@shared/schema";
 // Configure WebSocket for Neon
 neonConfig.webSocketConstructor = ws;
 
+if (!process.env.DATABASE_URL) {
+  throw new Error('DATABASE_URL environment variable is not set');
+}
+
 // Initialize database connections
 const pool = new Pool({ 
   connectionString: process.env.DATABASE_URL,
