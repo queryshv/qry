@@ -1,6 +1,39 @@
-node_modules
-dist
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Credentials
+*.pem
+*.key
+*credentials*.json
+cre.txt
+
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Operating System
 .DS_Store
+Thumbs.db
+
+# Upload directories
+uploads/
+
 server/public
 vite.config.ts.*
 *.tar.gz# Ignore credential files
