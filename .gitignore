@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz# Ignore credential files
+*-credentials.json
+*-service-account*.json
+query-management-system-459212-fb28c8962e35.json
